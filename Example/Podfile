@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KingfisherHeifProcessor_Example' do
+  pod 'KingfisherHeifProcessor', :path => '../'
+
+  target 'KingfisherHeifProcessor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
