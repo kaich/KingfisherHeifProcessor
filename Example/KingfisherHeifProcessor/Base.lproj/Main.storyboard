@@ -35,13 +35,29 @@
                                     <constraint firstAttribute="height" constant="239" id="4d1-zJ-hey"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyt-6G-g7r">
+                                <rect key="frame" x="35" y="39" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvZ-ZW-uUz">
+                                <rect key="frame" x="35" y="290" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="04z-Ju-eWs" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PTg-xg-Tvc"/>
+                            <constraint firstItem="UvZ-ZW-uUz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="Q6b-PW-9LN"/>
                             <constraint firstItem="Zl8-J3-3bJ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-156.5" id="WJi-dE-jvv"/>
+                            <constraint firstItem="nyt-6G-g7r" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="19" id="Wp3-zr-HOy"/>
                             <constraint firstItem="04z-Ju-eWs" firstAttribute="top" secondItem="Zl8-J3-3bJ" secondAttribute="bottom" constant="39" id="fLa-7F-tZr"/>
+                            <constraint firstItem="nyt-6G-g7r" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="gha-q6-lVY"/>
                             <constraint firstItem="Zl8-J3-3bJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jrZ-YO-Erq"/>
+                            <constraint firstItem="04z-Ju-eWs" firstAttribute="top" secondItem="UvZ-ZW-uUz" secondAttribute="bottom" constant="8" id="utU-ne-BRL"/>
                         </constraints>
                     </view>
                     <connections>
