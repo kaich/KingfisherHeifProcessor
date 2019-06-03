@@ -1,0 +1,6 @@
+framework module Pods_KingfisherHeifProcessor_Example {
+  umbrella header "Pods-KingfisherHeifProcessor_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

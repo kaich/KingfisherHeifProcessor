@@ -20,9 +20,19 @@ it, simply add the following line to your Podfile:
 pod 'KingfisherHeifProcessor'
 ```
 
+## Usage 
+
+让Kingfisher支持Heif格式的图片。具体使用如下：
+
+```
+        let url = Bundle.main.url(forResource: "ski_jump_1440x96", withExtension: "heic")
+        let processor = KingfisherHEIFProcessor()
+        ivImage.kf.setImage(with: url, options: [.processor(processor)])
+```
+
 ## Author
 
-chengkai1853@163.com, chengkai1853@163.com
+chengkai1853@163.com
 
 ## License
 

@@ -1,0 +1,68 @@
+{
+  "name": "KingfisherHeifProcessor",
+  "version": "0.1.0",
+  "summary": "A short description of KingfisherHeifProcessor.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/chengkai1853@163.com/KingfisherHeifProcessor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chengkai1853@163.com": "chengkai1853@163.com"
+  },
+  "source": {
+    "git": "https://github.com/chengkai1853@163.com/KingfisherHeifProcessor.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KingfisherHeifProcessor/Classes/**/*",
+  "dependencies": {
+    "Kingfisher": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "libheif",
+      "dependencies": {
+        "libheif/libheif": [
+          ">= 1.4.0"
+        ]
+      }
+    },
+    {
+      "name": "libde265",
+      "dependencies": {
+        "libheif/libde265": [
+
+        ],
+        "KingfisherHeifProcessor/libheif": [
+
+        ]
+      },
+      "xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) HAVE_LIBDE265=1"
+      }
+    },
+    {
+      "name": "libx265",
+      "dependencies": {
+        "libheif/libx265": [
+
+        ],
+        "KingfisherHeifProcessor/libheif": [
+
+        ]
+      },
+      "xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) HAVE_X265=1"
+      }
+    },
+    {
+      "name": "Kingfisher"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+PODS:
+  - Kingfisher (4.10.1)
+  - KingfisherHeifProcessor (0.1.0):
+    - Kingfisher
+    - KingfisherHeifProcessor/Kingfisher (= 0.1.0)
+    - KingfisherHeifProcessor/libde265 (= 0.1.0)
+    - KingfisherHeifProcessor/libheif (= 0.1.0)
+    - KingfisherHeifProcessor/libx265 (= 0.1.0)
+  - KingfisherHeifProcessor/Kingfisher (0.1.0):
+    - Kingfisher
+  - KingfisherHeifProcessor/libde265 (0.1.0):
+    - Kingfisher
+    - KingfisherHeifProcessor/libheif
+    - libheif/libde265
+  - KingfisherHeifProcessor/libheif (0.1.0):
+    - Kingfisher
+    - libheif/libheif (>= 1.4.0)
+  - KingfisherHeifProcessor/libx265 (0.1.0):
+    - Kingfisher
+    - KingfisherHeifProcessor/libheif
+    - libheif/libx265
+  - libde265 (1.0.3)
+  - libheif/libde265 (1.4.0):
+    - libde265
+    - libheif/libheif
+  - libheif/libheif (1.4.0)
+  - libheif/libx265 (1.4.0):
+    - libheif/libheif
+    - libx265
+  - libx265 (3.0):
+    - libx265/common (= 3.0)
+    - libx265/core (= 3.0)
+    - libx265/encoder (= 3.0)
+    - libx265/input (= 3.0)
+    - libx265/output (= 3.0)
+    - libx265/x265 (= 3.0)
+  - libx265/common (3.0):
+    - libx265/core
+  - libx265/core (3.0)
+  - libx265/encoder (3.0):
+    - libx265/output
+  - libx265/input (3.0):
+    - libx265/common
+  - libx265/output (3.0):
+    - libx265/input
+  - libx265/x265 (3.0):
+    - libx265/common
+    - libx265/core
+    - libx265/encoder
+    - libx265/input
+    - libx265/output
+
+DEPENDENCIES:
+  - KingfisherHeifProcessor (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - libde265
+    - libheif
+    - libx265
+
+EXTERNAL SOURCES:
+  KingfisherHeifProcessor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  KingfisherHeifProcessor: 289747fcee266258d7b5793fa8be338307ce4cf4
+  libde265: b2a0cc3d2aeaafb792b43fcf2a122f42e1de107c
+  libheif: e79ed1935019556d3b7a5b8926dcbaa478cb4180
+  libx265: 23ab716aae3eff1e6b68b3db6ace8883867691c4
+
+PODFILE CHECKSUM: c60fd4937258d5d0c2cab24df10ee92f65b04c03
+
+COCOAPODS: 1.6.1

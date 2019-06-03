@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D17C08C22A3CA2A00F4738E /* ski_jump_1440x96.heic in Resources */ = {isa = PBXBuildFile; fileRef = 4D17C08B22A3CA2A00F4738E /* ski_jump_1440x96.heic */; };
 		55B61CAB039F2AA884E07CF4 /* Pods_KingfisherHeifProcessor_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CC8BEEC9F90CAB808F6AC7 /* Pods_KingfisherHeifProcessor_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,9 +30,10 @@
 
 /* Begin PBXFileReference section */
 		23DD49290D96C5DB1B5F6FAA /* Pods-KingfisherHeifProcessor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherHeifProcessor_Example.release.xcconfig"; path = "Target Support Files/Pods-KingfisherHeifProcessor_Example/Pods-KingfisherHeifProcessor_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2EEDE8C04E16A11C76755E26 /* KingfisherHeifProcessor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KingfisherHeifProcessor.podspec; path = ../KingfisherHeifProcessor.podspec; sourceTree = "<group>"; };
+		2EEDE8C04E16A11C76755E26 /* KingfisherHeifProcessor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KingfisherHeifProcessor.podspec; path = ../KingfisherHeifProcessor.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		37CA7758D66FB9BDFF9F0B61 /* Pods-KingfisherHeifProcessor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherHeifProcessor_Tests.release.xcconfig"; path = "Target Support Files/Pods-KingfisherHeifProcessor_Tests/Pods-KingfisherHeifProcessor_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		40CC8BEEC9F90CAB808F6AC7 /* Pods_KingfisherHeifProcessor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingfisherHeifProcessor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D17C08B22A3CA2A00F4738E /* ski_jump_1440x96.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = ski_jump_1440x96.heic; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KingfisherHeifProcessor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingfisherHeifProcessor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +45,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A316657D1776E2922B81FC8 /* Pods-KingfisherHeifProcessor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherHeifProcessor_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KingfisherHeifProcessor_Tests/Pods-KingfisherHeifProcessor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		97DE96D6331E0FCEBE2F3BDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9C4DCC2E131B308C27B329FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		97DE96D6331E0FCEBE2F3BDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9C4DCC2E131B308C27B329FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A270229DF5B881024C7EFC0E /* Pods-KingfisherHeifProcessor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherHeifProcessor_Example.debug.xcconfig"; path = "Target Support Files/Pods-KingfisherHeifProcessor_Example/Pods-KingfisherHeifProcessor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B8706C8B65258F3600BBE4D3 /* Pods_KingfisherHeifProcessor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingfisherHeifProcessor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				4D17C08B22A3CA2A00F4738E /* ski_jump_1440x96.heic */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for KingfisherHeifProcessor";
@@ -147,7 +150,6 @@
 				6A316657D1776E2922B81FC8 /* Pods-KingfisherHeifProcessor_Tests.debug.xcconfig */,
 				37CA7758D66FB9BDFF9F0B61 /* Pods-KingfisherHeifProcessor_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 28267N5PG9;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 28267N5PG9;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +231,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				4D17C08C22A3CA2A00F4738E /* ski_jump_1440x96.heic in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -293,13 +299,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KingfisherHeifProcessor_Example/Pods-KingfisherHeifProcessor_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/KingfisherHeifProcessor/KingfisherHeifProcessor.framework",
+				"${BUILT_PRODUCTS_DIR}/libde265/libde265.framework",
+				"${BUILT_PRODUCTS_DIR}/libheif/libheif.framework",
+				"${BUILT_PRODUCTS_DIR}/libx265/libx265.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KingfisherHeifProcessor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libde265.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libheif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libx265.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -482,6 +496,7 @@
 			baseConfigurationReference = A270229DF5B881024C7EFC0E /* Pods-KingfisherHeifProcessor_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28267N5PG9;
 				INFOPLIST_FILE = KingfisherHeifProcessor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -497,6 +512,7 @@
 			baseConfigurationReference = 23DD49290D96C5DB1B5F6FAA /* Pods-KingfisherHeifProcessor_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28267N5PG9;
 				INFOPLIST_FILE = KingfisherHeifProcessor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -511,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A316657D1776E2922B81FC8 /* Pods-KingfisherHeifProcessor_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 28267N5PG9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -533,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37CA7758D66FB9BDFF9F0B61 /* Pods-KingfisherHeifProcessor_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 28267N5PG9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

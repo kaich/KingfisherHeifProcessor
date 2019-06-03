@@ -32,11 +32,30 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'KingfisherHeifProcessor/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'KingfisherHeifProcessor' => ['KingfisherHeifProcessor/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'libheif' do |ss|
+      ss.dependency 'libheif/libheif', '>= 1.4.0'
+  end
+  
+  # HEIF Decoding need libde265
+  s.subspec 'libde265' do |ss|
+      ss.dependency 'libheif/libde265'
+      ss.dependency 'KingfisherHeifProcessor/libheif'
+      ss.xcconfig = {
+          'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) HAVE_LIBDE265=1'
+      }
+  end
+  
+  # HEIF Encoding need libx265
+  s.subspec 'libx265' do |ss|
+      ss.dependency 'libheif/libx265'
+      ss.dependency 'KingfisherHeifProcessor/libheif'
+      ss.xcconfig = {
+          'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) HAVE_X265=1'
+      }
+  end
+  
+  s.subspec 'Kingfisher' do |ss|
+      s.dependency 'Kingfisher'
+  end
+  
 end
