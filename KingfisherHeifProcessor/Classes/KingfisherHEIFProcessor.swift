@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 import Kingfisher
 
 public struct KingfisherHEIFProcessor: ImageProcessor {
@@ -20,13 +21,22 @@ public struct KingfisherHEIFProcessor: ImageProcessor {
         case .data(let data):
             let coder = KingfisherHEIFCoder()
             if coder.canDecode(from: data) {
-                let image = coder.decodedImage(with: data)
-                return image
-            } else {
-                let image = UIImage(data: data)
-                return image
+                if #available(iOS 11.0, *) {
+                    if !supports(type: AVFileType.heic.rawValue) {
+                        let image = coder.decodedImage(with: data)
+                        return image
+                    }
+                }
             }
+            
+            let image = UIImage(data: data)
+            return image
         }
+    }
+    
+    func supports(type: String) -> Bool {
+        let supportedTypes = CGImageDestinationCopyTypeIdentifiers() as NSArray
+        return supportedTypes.contains(type)
     }
     
 }
