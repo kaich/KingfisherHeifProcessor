@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //HEIC
-        let url = Bundle.main.url(forResource: "ski_jump_1440x96", withExtension: "heic")
+        let url = Bundle.main.url(forResource: "2019_06_05_15_46_IMG_3674", withExtension: "heic")
         let processor = KingfisherHEIFProcessor()
         ivImage.kf.setImage(with: url, options: [.processor(processor)])
         

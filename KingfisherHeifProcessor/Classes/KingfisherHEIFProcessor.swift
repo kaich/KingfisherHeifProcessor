@@ -21,11 +21,9 @@ public struct KingfisherHEIFProcessor: ImageProcessor {
         case .data(let data):
             let coder = KingfisherHEIFCoder()
             if coder.canDecode(from: data) {
-                if #available(iOS 11.0, *) {
-                    if !supports(type: AVFileType.heic.rawValue) {
-                        let image = coder.decodedImage(with: data)
-                        return image
-                    }
+                if !isSupportHeic() {
+                    let image = coder.decodedImage(with: data)
+                    return image
                 }
             }
             
@@ -39,4 +37,10 @@ public struct KingfisherHEIFProcessor: ImageProcessor {
         return supportedTypes.contains(type)
     }
     
+    func isSupportHeic() -> Bool {
+        if #available(iOS 11.0, *) {
+            return supports(type: AVFileType.heic.rawValue)
+        }
+        return false
+    }
 }
